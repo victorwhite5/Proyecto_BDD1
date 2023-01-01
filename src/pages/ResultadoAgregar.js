@@ -127,11 +127,60 @@ const ResultadoAgregar = (props) => {
         <Row className="mt-3">
           <Col className="justify-content-center align-items-center mx-5">
             <Card>
-              <Card.Body></Card.Body>
+              <Card.Body>
+                <Row className="text-center">
+                  <h3>CLASIFICACION</h3>
+                </Row>
+
+                <Row>
+                  <div className="card-group">
+                    <Col style={{ width: "60px" }} className="col-1">
+                      <div className="card">
+                        <div className="card-body">
+                          <Row className="text-center">
+                            <h6>Pos</h6>
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+
+                    <Col style={{ width: "310px" }} className="col-1">
+                      <div className="card">
+                        <div className="card-body">
+                          <Row className="text-center">
+                            <h6>Diferencias</h6>
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+
+                    <Col style={{ width: "398px" }} className="col-1">
+                      <div className="card">
+                        <div className="card-body">
+                          <Row className="text-center">
+                            <h6>Speed Ratings</h6>
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+
+                    <Col style={{ width: "398px" }} className="col-1">
+                      <div className="card">
+                        <div className="card-body">
+                          <Row className="text-center">
+                            <h6>Parciales</h6>
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+                  </div>
+                </Row>
+              </Card.Body>
             </Card>
           </Col>
         </Row>
-        <Row className="mt-3">
+
+        <Row className="mt-5">
           <Button onClick={formSubmissionHandler}>Submit</Button>
         </Row>
       </Form>
