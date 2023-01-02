@@ -1264,7 +1264,7 @@ const Resultados = () => {
               </Row>
 
               <Row className="row row-cols-3 mt-3 text-center d-flex justify-content-center">
-                {eventos2.map((x)=><InfoEventos key={x.id} id={x.id} fecha={x.fecha} tipo="agregar"></InfoEventos>)}
+                {eventos2.map((x)=><InfoEventos key={x.id} id={x.id} fecha={x.fecha} tipo="carrerasRegistradas" tipo2="agregarResultados"></InfoEventos>)}
               </Row>
             </Card.Body>
           </Card>

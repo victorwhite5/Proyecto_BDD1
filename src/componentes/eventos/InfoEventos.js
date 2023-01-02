@@ -3,6 +3,9 @@ import { Card, Col, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 const InfoEventos = (props) => {
+  let content;
+  
+  
   return (
     <Container>
       <Col className="col d-flex justify-content-center">
@@ -10,7 +13,7 @@ const InfoEventos = (props) => {
           className="d-flex justify-content-center"
           style={{ textDecoration: "none" }}
           to={{
-            pathname: props.tipo=="resultados" ? `/resultados/${props.id}`: "/resultado/agregar",
+            pathname: props.tipo=="resultados" ? `/resultados/${props.id}`: props.tipo=="carrerasRegistradas" ? `/carreras/${props.id}` : `/evento/registrar/${props.id}`,
             state: { props },
           }}
         >

@@ -19,6 +19,9 @@ import CaballerizaDetail from "./pages/CaballerizaDetail";
 import CaballerizaRegistrar from "./pages/CaballerizaRegistrar";
 import ResultadoEvento from "./pages/ResultadoEvento";
 import ResultadoAgregar from "./pages/ResultadoAgregar";
+import CarrerasEvento from "./pages/CarrerasEvento";
+import RegistrarEvento from "./pages/RegistrarEvento";
+import InscribirEjemplar from "./pages/InscribirEjemplar";
 
 function App() {
   return (
@@ -49,7 +52,7 @@ function App() {
           <Entrenadores></Entrenadores>
         </Route>
 
-        <Route path="/eventos">
+        <Route path="/eventos" exact>
           <Eventos></Eventos>
         </Route>
 
@@ -97,8 +100,20 @@ function App() {
          <ResultadoEvento></ResultadoEvento>
         </Route>
 
+        <Route path="/carreras/:eventoId">
+          <CarrerasEvento></CarrerasEvento>
+        </Route>
+
         <Route path="/resultado/agregar">
          <ResultadoAgregar></ResultadoAgregar>
+        </Route>
+
+        <Route path="/evento/registrar/:idEvento" exact>
+          <RegistrarEvento></RegistrarEvento>
+        </Route>
+
+        <Route path="/inscribir/ejemplar">
+          <InscribirEjemplar></InscribirEjemplar>
         </Route>
 
       </Switch>
